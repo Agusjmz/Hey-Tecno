@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$color-general: #FFF6F6;
+$color-secundario: #ab7980;
+$fuente-general: 'Josefin Sans', sans-serif;
+
+.general{
+    background-color: $color-general;
+    font-family: $fuente-general;
+}
+.general-imagen{
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+ul{
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: $color-secundario;
+        &:hover{
+            color: black;
+        }
+}
+}

@@ -1,0 +1,18 @@
+section{
+    font-family: $fuente-general;
+    .card-title{
+        color: $color-secundario;
+        ;
+    }
+    .card{
+        transition: transform .2s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+.lanzamiento-seccion{
+    background-color: $color-general;
+    padding: 20px;
+    border-radius: 10px;
+}

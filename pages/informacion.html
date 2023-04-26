@@ -5,78 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Hey Tecno - Informacion</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="Curiosidades sobre Informatica, Inteligencia Artificial, Hardware y Gaming">
+    <title>Informacion</title>
 </head>
 
 <body>
     <header class="navbar navbar-expand-lg border-bottom">
-        <div class="container-fluid justify-content-center">
-            <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" class="logo" width="100px"
-                    alt="Hey Tecno!"></a>
+        <div class="container">
+
+            <div>
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/img/logo.png" alt="heytecnologo" width="100" height="50">
+                </a>
+            </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+
+            <nav class="collapse navbar-collapse justify-content-start mt-3 ms-5" id="navbarNav">
+                <ul class="navbar-nav gap-3 mb-2">
+                    <li class="nav-item fs-5">
+                        <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+                    <li class="nav-item fs-5">
+                        <a class="nav-link" href="./pages/noticias.html">Noticias</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../pages/informacion.html">Informacion</a>
+                    <li class="nav-item fs-5">
+                        <a class="nav-link" href="./informacion.html">Información</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/endesarrollo.html">En Desarrollo</a>
+                    <li class="nav-item fs-5">
+                        <a class="nav-link" href="./endesarrollo.html">En Desarrollo</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    <li class="nav-item fs-5">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </nav>
+            <a href="./pages/contacto.html" class="ov-btn-grow-box fs-5">Suscribite</a>
         </div>
     </header>
     <main>
-        <div>
-            <h2 class="text-center h1 fw-bolder mt-5 mb-5">Información</h2>
-        </div>
-
-        <div class="container">
-            <div class="row mt-3">
-                <div class="col-6">
-                    <a href="#informatica"><img class="info " src="../img/informatica.png" alt=""></a>
-
-                </div>
-                <div class="col-6">
-                    <a href="#ia"><img class="info" src="../img/inteligencia-artificial.png" alt=""></a>
-
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-6">
-                    <a href="#hardware"><img class="info" src="../img/hardware.png" alt=""></a>
-
-                </div>
-                <div class="col-6">
-                    <a href="#gaming"><img class="info" src="../img/gaming.png" alt=""></a>
-
-                </div>
-            </div>
-        </div>
-
-        <section class="container mt-5">
+        <section class="informacion container mt-5">
 
             <!-- informatica -->
-            <div class="row border border-success p-2 mb-2 border-opacity-25 rounded">
-                <div class="col-6">
+            <div class="row border border-success p-2 mb-2 border-opacity-25 rounded ">
+                <div class="col-md-6 col-sm-12 text-center">
 
-                    <h3 id="informatica" class="border-bottom">Informatica</h3>
+                    <h3 id="informatica" class="border-bottom text-center">Informatica</h3>
 
                     <p>La informática es la disciplina que se encarga del procesamiento automático de la información
                         mediante el uso de herramientas tecnológicas, como la computadora. Esta ciencia se encarga de la
@@ -89,7 +76,7 @@
                         programación y la seguridad informática.</p>
                 </div>
 
-                <div class="col-6 mt-5  ">
+                <div class="col-6 mt-5 text-center">
 
                     <h4>Populares</h4>
                     <ul>
@@ -108,20 +95,21 @@
             </div>
             <!-- inteligencia artificial -->
             <div class="row border border-success p-2 mb-2 border-opacity-25 rounded">
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12 text-center">
 
                     <h3 id="ia" class="border-bottom">Inteligencia Artificial</h3>
 
 
                     <p>La Inteligencia Artificial (IA) se refiere a la capacidad de las máquinas y sistemas informáticos
                         para realizar tareas que, en general, requieren inteligencia humana, como el aprendizaje, la
-                        resolución de problemas, la toma de decisiones y el reconocimiento de patrones.</p>
-                    Actualmente, la IA se aplica en una amplia variedad de campos, desde la medicina y la ingeniería
-                    hasta
-                    la industria automotriz y el comercio electrónico.
+                        resolución de problemas, la toma de decisiones y el reconocimiento de patrones. <br>
+                        Actualmente, la IA se aplica en una amplia variedad de campos, desde la medicina y la ingeniería
+                        hasta
+                        la industria automotriz y el comercio electrónico.</p>
+
                 </div>
 
-                <div class="col-6 mt-5">
+                <div class="col-6 mt-5 text-center">
                     <h4>Populares</h4>
                     <ul>
                         <a href="">
@@ -138,7 +126,7 @@
             </div>
             <!-- hardware -->
             <div class="row border border-success p-2 mb-2 border-opacity-25 rounded">
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12 text-center">
 
                     <h3 id="hardware" class="border-bottom">Hardware</h3>
 
@@ -147,7 +135,7 @@
                         conectores, periféricos y cualquier otro elemento que pueda ser tocado o manipulado.</p>
                 </div>
 
-                <div class="col-6 mt-5">
+                <div class="col-6 mt-5 text-center">
                     <h4>Populares</h4>
                     <ul>
                         <a href="">
@@ -161,7 +149,7 @@
             </div>
             <!-- gaming -->
             <div class="row border border-success p-2 mb-2 border-opacity-25 rounded">
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12 text-center">
 
                     <h3 id="gaming" class="border-bottom">Gaming</h3>
 
@@ -173,7 +161,7 @@
                         juegos.</p>
                 </div>
 
-                <div class="col-6 mt-5">
+                <div class="col-6 mt-5 text-center">
                     <h4>Populares</h4>
                     <ul>
                         <a href="">

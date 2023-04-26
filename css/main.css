@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.general, footer, header {
+  background-color: #FFF6F6;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.general-imagen, .portada img, .desarrollo img {
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+ul {
+  list-style: none;
+}
+ul a {
+  text-decoration: none;
+  color: #ab7980;
+}
+ul a:hover {
+  color: black;
+}
+
+header .nav-link {
+  color: black;
+}
+header .nav-link:hover {
+  color: #ab7980;
+}
+
+footer .bi {
+  color: #ab7980;
+}
+footer .email-estilo {
+  border-radius: 5px;
+  border: none;
+}
+
+.botones {
+  background: #ab7980;
+  color: #ffffff;
+}
+.botones:hover {
+  background: #ffffff;
+  color: #ab7980;
+}
+
+.ov-btn-grow-box {
+  background: #ab7980;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  border: 2px solid #FFF6F6;
+  padding: 10px 15px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.ov-btn-grow-box:hover {
+  color: #ab7980;
+}
+.ov-btn-grow-box::after {
+  content: "";
+  background: #FFF6F6;
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0);
+  transition: all 0.3s ease;
+}
+.ov-btn-grow-box:hover::after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
+}
+
+.portada {
+  font-family: "Josefin Sans", sans-serif;
+}
+.portada span {
+  color: #ab7980;
+}
+.nuestras-secciones {
+  font-family: "Josefin Sans", sans-serif;
+}
+.nuestras-secciones .card-title {
+  color: black;
+}
+.nuestras-secciones .card-title:hover {
+  color: #ab7980;
+}
+.nuestras-secciones .zoom {
+  transition: transform 0.2s;
+}
+.nuestras-secciones .zoom:hover {
+  transform: scale(1.1);
+}
+
+section {
+  font-family: "Josefin Sans", sans-serif;
+}
+section .card-title {
+  color: #ab7980;
+}
+section .card {
+  transition: transform 0.2s;
+}
+section .card:hover {
+  transform: scale(1.1);
+}
+
+.lanzamiento-seccion {
+  background-color: #FFF6F6;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

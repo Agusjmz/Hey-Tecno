@@ -1,0 +1,26 @@
+.portada{
+    font-family: $fuente-general;
+    span{
+        color: $color-secundario;
+    }
+    img{
+        @extend .general-imagen
+        
+    }
+}
+
+.nuestras-secciones{
+    font-family: $fuente-general;
+    .card-title{
+        color: black;
+        &:hover{
+            color: $color-secundario;
+        }
+    }
+    .zoom{
+        transition: transform .2s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
