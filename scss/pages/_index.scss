@@ -1,26 +1,37 @@
-.portada{
-    font-family: $fuente-general;
-    span{
-        color: $color-secundario;
-    }
-    img{
-        @extend .general-imagen
-        
-    }
+.logo {
+    width: 100px;
+    height: 50px;
 }
 
-.nuestras-secciones{
+section {
     font-family: $fuente-general;
-    .card-title{
-        color: black;
-        &:hover{
-            color: $color-secundario;
+
+    .imagen {
+        border-radius: 20px;
+    }
+
+    h1 span {
+        color: $color-secundario;
+    }
+
+}
+
+.card-presentacion {
+    color: $color-secundario;
+    background: $color-principal;
+    transition: transform 0.2s;
+
+    &:hover {
+        background: #46b5a2;
+        color: $color-principal;
+        transform: scale(1.1);
+
+        .card-title {
+            color: $color-principal;
         }
     }
-    .zoom{
-        transition: transform .2s;
-        &:hover{
-            transform: scale(1.1);
-        }
+
+    .card-title {
+        color: #46b5a2;
     }
 }

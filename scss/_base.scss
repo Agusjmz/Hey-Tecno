@@ -4,26 +4,11 @@
     box-sizing: border-box;
 }
 
-$color-general: #FFF6F6;
-$color-secundario: #ab7980;
-$fuente-general: 'Josefin Sans', sans-serif;
+$color-principal: #f9f9e7;
+$color-secundario: #46b5a2;
+$fuente-general: 'Poppins', sans-serif;
 
-.general{
-    background-color: $color-general;
+.general {
+    background-color: $color-principal;
     font-family: $fuente-general;
-}
-.general-imagen{
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-ul{
-    list-style: none;
-    a{
-        text-decoration: none;
-        color: $color-secundario;
-        &:hover{
-            color: black;
-        }
-}
 }

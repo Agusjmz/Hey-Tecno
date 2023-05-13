@@ -1,5 +1,43 @@
-.desarrollo{
-    img{
-        @extend .general-imagen
+.boton-proyecto {
+    font-size: 25px;
+    background: $color-principal;
+    color: $color-secundario;
+    border: 2px solid $color-secundario;
+    padding: 16px 20px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+
+    &::before,
+    &::after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: -50%;
+        background-color: $color-secundario;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &::after {
+        left: 100%;
+    }
+
+    &:hover {
+        color: $color-principal;
+    }
+
+    &:hover::before {
+        left: 0;
+    }
+
+    &:hover::after {
+        left: 50%;
     }
 }

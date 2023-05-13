@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Poppins:wght@200;400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/main.css">
-    
+    <link rel="stylesheet" href="../css/style.css">
+
     <meta name="description" content="Todas las novedades sobre tecnologia estan en HeyTecno!">
     <title>Noticias y Lanzamientos | HeyTecno</title>
 </head>
@@ -26,7 +26,7 @@
 
             <div>
                 <a class="navbar-brand" href="/index.html">
-                    <img src="/img/logo.png" alt="heytecnologo" width="100" height="50">
+                    <img class="logo" src="../img/logo.png" alt="heytecnologo">
                 </a>
             </div>
 
@@ -41,29 +41,29 @@
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item fs-5">
-                        <a class="nav-link" href="./pages/noticias.html">Noticias</a>
+                        <a class="nav-link" href="../pages/noticiass.html">Noticias</a>
                     </li>
                     <li class="nav-item fs-5">
-                        <a class="nav-link" href="./informacion.html">Información</a>
+                        <a class="nav-link" href="../pages/informacion.html">Información</a>
                     </li>
                     <li class="nav-item fs-5">
-                        <a class="nav-link" href="./pages/endesarrollo.html">En Desarrollo</a>
+                        <a class="nav-link" href="../pages/endesarrollo.html">En Desarrollo</a>
                     </li>
                     <li class="nav-item fs-5">
-                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </nav>
-            <a href="./pages/contacto.html" class="ov-btn-grow-box fs-5">Suscribite</a>
+            <a href="../pages/contacto.html" class="ov-btn-grow-box fs-5">Suscribite</a>
         </div>
     </header>
 
     <main>
         <!-- Tarjetas de secciones -->
-        <section class="container-fluid mt-5">
-            <h2 class="text-center fw-bolder mb-5 h1">Noticias y Lanzamientos</h2>
+        <section class="container mt-5">
+            <h1 class="text-center fw-bolder mb-5 h1">Noticias y Lanzamientos</h1>
             <div class="row justify-content-evenly">
-                <div class="card col-6 mt-3 shadow-lg p-3 mb-3 bg-body-tertiary rounded" style="width: 18rem;">
+                <div class="card card-seccion col-lg-6 col-sm-12 mt-3 shadow-lg p-3 mb-3" style="width: 18rem;">
                     <div class="card-body text-center">
                         <h5 class="card-title">Noticias</h5>
                         <p class="card-text">Enterate de las ultimas novedades en el mundo tecnologico.</p>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
 
-                <div class="card col-6 mt-3 shadow-lg p-3 mb-3 bg-body-tertiary rounded" style="width: 18rem;">
+                <div class="card card-seccion col-lg-6 col-sm-12 mt-3 shadow-lg p-3 mb-3" style="width: 18rem;">
                     <div class="card-body text-center">
                         <h5 class="card-title">Lanzamientos</h5>
                         <p class="card-text">Descubri los ultimos lanzamientos en tecnologia.</p>
@@ -82,442 +82,448 @@
         </section>
         <!-- Fin de tarjetas de secciones -->
 
+        <!-- Comienza noticias -->
         <section class="container">
             <div class="row">
-                <div class="col-md-12 mb-3">
-                    <h2>Últimas noticias</h2>
+                <div class=" mb-3 mt-5">
+                    <h2 id="noticias">Últimas noticias</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="../img/noticia-ia.jpg" class="card-img-top" alt="Noticia 1">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card noticia">
+                        <img src="../img/noticia-ia.jpg" class="card-img-top" alt="Noticia IA">
                         <div class="card-body">
-                            <h5 class="card-noticia">Humanos virtuales, inteligencia artificial y realidad sintética</h5>
+                            <h3>Humanos virtuales, inteligencia artificial y realidad sintética
+                            </h3>
                             <p class="card-text">Investigadores de la Universidad de Stanford han desarrollado un nuevo
                                 sistema de "humanos virtuales" utilizando inteligencia artificial y realidad sintética.
                                 Este sistema permite a los usuarios crear avatares de sí mismos y entrenarlos para que
                                 sean capaces de realizar tareas específicas.</p>
-                            <a href="#" class="btn botones ">Leer más</a>
+                            <a href="#" class="btn botones ">Leer más...</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="../img/noticia-gpt.jpg" class="card-img-top" alt="Noticia 2">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card noticia">
+                        <img src="../img/noticia-gpt.jpg" class="card-img-top" alt="Noticia ChatGPT">
                         <div class="card-body">
-                            <h5 class="card-noticia">OpenAI: Todo sobre ChatGPT</h5>
+                            <h3>OpenAI: Todo sobre ChatGPT</h3>
                             <p class="card-text">ChatGPT, el modelo de lenguaje natural desarrollado por OpenAI, ha
                                 alcanzado un hito significativo al superar la marca de 1 billón de tokens generados. El
                                 modelo, que se basa en la arquitectura GPT-3.5, ha sido entrenado para comprender y
                                 responder preguntas en más de 40 idiomas diferentes</p>
-                            <a href="#" class="btn botones">Leer más</a>
+                            <a href="#" class="btn botones">Leer más...</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="../img/noticia-programacion.jpg" class="card-img-top" alt="Noticia 3">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card noticia">
+                        <img src="../img/noticia-programacion.jpg" class="card-img-top" alt="Noticia Programacion">
                         <div class="card-body">
-                            <h5 class="card-noticia">Lenguajes de programación más populares en 2023</h5>
+                            <h3>Lenguajes de programación más populares en 2023</h3>
                             <p class="card-text">Según la encuesta anual de Stack Overflow, un sitio web popular para
                                 desarrolladores de software, el lenguaje de programación más utilizado en 2021 fue
                                 JavaScript, seguido de Python y Java.</p>
-                            <a href="#" class="btn botones">Leer más</a>
+                            <a href="#" class="btn botones">Leer más...</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="../img/noticia-medicina.jpg" class="card-img-top" alt="Noticia 1">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card noticia">
+                        <img src="../img/noticia-medicina.jpg" class="card-img-top" alt="Noticia IA-Medicina">
                         <div class="card-body">
-                            <h5 class="card-noticia">Antes de que se desarrolle</h5>
+                            <h3>Antes de que se desarrolle</h3>
                             <p class="card-text">La Inteligencia Artificial decteta el cancer de mama 5 años antes de
                                 que se desarrolle. Investigadores del MIT y del
                                 Hospital General de Massachusetts probraron la tecnologia con datos de 2009 a 2012
                                 provenientes de 90,000 mamografias de las de 6,000 pacientes.
                             </p>
-                            <a href="#" class="btn botones">Leer más</a>
+                            <a href="#" class="btn botones">Leer más...</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="../img/noticia-china.jpg" class="card-img-top" alt="Noticia 2">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card noticia">
+                        <img src="../img/noticia-china.jpg" class="card-img-top" alt="Noticia China">
                         <div class="card-body">
-                            <h5 class="card-noticia">China y su carrera por la supremacía en informática cuántica</h5>
+                            <h3>China y su carrera por la supremacía en informática cuántica</h3>
                             <p class="card-text">China está intensificando sus esfuerzos en la carrera global por la
                                 supremacía en la informática cuántica. El país ha estado invirtiendo en la investigación
                                 y el desarrollo de tecnología cuántica durante años y se está acelerando en su carrera
                                 para convertirse en líder mundial en este campo.</p>
-                            <a href="#" class="btn botones">Leer más</a>
+                            <a href="#" class="btn botones">Leer más...</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="../img/noticia-internet.jpg" class="card-img-top" alt="Noticia 3">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card noticia">
+                        <img src="../img/noticia-internet.jpg" class="card-img-top" alt="Noticia Trafico Internet">
                         <div class="card-body">
-                            <h5 class="card-noticia">De Meta a Netflix: seis plataformas digitales generan más de la mitad
-                                del tráfico total de internet</h5>
+                            <h3>De Meta a Netflix: seis plataformas digitales generan más de la
+                                mitad
+                                del tráfico total de internet</h3>
                             <p class="card-text">El tráfico en internet aumenta sin parar y alrededor de un 35%
                                 anualmente, pero tan solo seis grandes compañías generan más de la mitad de este
                                 movimiento. Alphabet, la matriz de Google, controla el 21% del total, seguido por Meta,
                                 con un 15%. Luego están Netflix (9%), Apple y Amazon (4%) y Microsoft (3%).</p>
-                            <a href="#" class="btn botones">Leer más</a>
+                            <a href="#" class="btn botones">Leer más...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de noticias -->
+
+        <!-- Seccion Lanzamientos -->
+
+        <section class="mt-5 mb-5 lanzamiento-seccion">
+            
+                
+                <h2 id="lanzamientos">Lanzamientos</h2>
+                <div class="container">
+                <div class="col-12 d-flex justify-content-evenly mt-5">
+                    <a href="#moviles"><button type="button" class="btn boton">Moviles</button></a>
+                    <a href="#consolas"><button type="button" class="btn boton">Consolas</button></a>
+                    <a href="#pc"><button type="button" class="btn boton">PC</button></a>
+                    <a href="#tv"><button type="button" class="btn boton">TV</button></a>
+                    <a href="#accesorios"><button type="button" class="btn boton">Accesorios</button></a>
+                </div>
+                </div>
+            
+        </section>
+
+        <!-- MOVILES -->
+        <section class="lanzamiento container mt-5 container-md-fluid">
+
+            <h3 class="text-center" id="moviles">Moviles</h3>
+            <div class="container text-start mt-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-12">
+                        <h2 class="mt-5">El nuevo Motorola Edge 30 Ultra</h2>
+                        <p>Motorola ha lanzado una nueva actualización de software para el
+                            Edge 30 Ultra, que incluye
+                            mejoras en el rendimiento de la cámara y solución de problemas de seguridad. La
+                            actualización también añade nuevas funciones, como la posibilidad de realizar capturas de
+                            pantalla largas y la opción de habilitar o deshabilitar la vibración del dispositivo. <br>
+
+                            Además, la actualización trae mejoras en la estabilidad del sistema y en la duración de la
+                            batería. También se han corregido errores menores que afectaban el correcto funcionamiento
+                            del teléfono. <br><br>
+                            Algunas de sus características:
+
+                        <ul>
+                            <li>Pantalla: 6.8 pulgadas AMOLED con resolución de 1080 x 2400 pixeles y tasa de refresco
+                                de 144Hz.</li>
+                            <li>Procesador: Qualcomm Snapdragon 8 Gen 1 con una velocidad de reloj de hasta 3.2 GHz.
+                            </li>
+                            <li>Memoria RAM: 12 GB.</li>
+                            <li>Almacenamiento interno: 256 GB o 512 GB (no expandible mediante tarjeta microSD).</li>
+                            <li>Cámaras traseras: triple cámara trasera de 108 MP (principal), 16 MP (ultra gran
+                                angular) y 8 MP (telefoto con zoom óptico de 5x).</li>
+                            <li>Cámara frontal: 32 MP.</li>
+                            <li>Batería: 5,000 mAh con carga rápida de 120W (el cargador se vende por separado).</li>
+                            <li>Sistema operativo: Android 12.</li>
+
+                            Otras características: 5G, lector de huellas digitales en pantalla, resistencia al agua y al
+                            polvo (IP68), altavoces estéreo, NFC, Bluetooth 5.2, entre otros.
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/motorolaedgeUltra.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/motorola-frente.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/motorola-detras.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-<!-- Seccion Lanzamientos -->
+        <!-- Consolas -->
+        <section class="lanzamiento container mt-5 container-md-fluid">
 
-<section class="container mt-5 lanzamiento-seccion">
-    <h2 id="lanzamientos" class="text-center">Lanzamientos</h2>
-    <div class=" col d-flex justify-content-around mt-5 ">
-        <a href="#moviles" class="boton"><button type="button"
-                class="btn ov-btn-grow-box btn-lg">Moviles</button></a>
-        <a href="#consolas" class="boton"><button type="button"
-                class="btn ov-btn-grow-box btn-lg">Consolas</button></a>
-        <a href="#pc" class="boton"><button type="button" class="btn ov-btn-grow-box btn-lg">PC</button></a>
-        <a href="#tv" class="boton"><button type="button" class="btn ov-btn-grow-box btn-lg">TV</button></a>
-        <a href="#accesorios" class="boton"><button type="button"
-                class="btn ov-btn-grow-box">Accesorios</button></a>
-    </div>
-</section>
+            <h3 class="text-center" id="consolas">Consolas</h3>
+            <div class="container text-start mt-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-12">
+                        <h2>Q-lite: la proxima consola portatil de Sony</h2>
+                        <p>Q Lite extendería el legado de PS Vita, en este caso para jugar en
+                            remoto con la PlayStation
+                            5.
+                            Lo que se sabe hasta el momento es que Q Lite será más un accesorio de PlayStation 5 que una
+                            consola portátil propiamente dicha. En
+                            este caso, sería útil para jugar dentro de casa, aunque sin la necesidad de estar frente al
+                            televisor. Por ejemplo, el usuario podrá seguir empleándola en otros ambientes de su hogar,
+                            en la pantalla más pequeña y portable. <br><br>
+                            Algunos datos que se conocen sobre esta consola:
 
-<!-- MOVILES -->
-<section class="lanzamiento container mt-5 container-md-fluid">
+                        <ul>
+                            <li>Las informaciones preliminares señalan que el equipo se llama Q Lite, aunque aquella es
+                                una denominación clave que circula dentro de las oficinas de Sony. En un eventual
+                                lanzamiento, el producto tendría otro nombre.</li>
+                            <li>Procesador: Qualcomm Snapdragon 8 Gen 1 con una velocidad de reloj de hasta 3.2 GHz.
+                            </li>
+                            <li>El próximo dispositivo portable no estaría pensado para correr juegos nativos y propios
+                                tal como ocurrió con PS Vita, sino para funcionar en conjunto con la PlayStation 5.</li>
+                            <li>La idea es que corra juegos de PS5 en forma remota gracias a la función Remote Play.
+                            </li>
+                            <li>Q Lite tendría una pantalla táctil de 8 pulgadas con resolución de 1080p y soporte para
+                                títulos en 60 cuadros por segundo.</li>
+                            <li>Los gatillos incluidos ostentarían la misma tecnología adaptativa que ya conocemos en
+                                los mandos DualSense de PS5.</li>
 
-    <h3 class="text-center fs-1" id="moviles">Moviles</h3>
-    <div class="container text-start mt-5">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-sm-12 noticia">
-                <h2 class="mt-5">El nuevo Motorola Edge 30 Ultra</h2>
-                <p class="lead fs-6">Motorola ha lanzado una nueva actualización de software para el
-                    Edge 30 Ultra, que incluye
-                    mejoras en el rendimiento de la cámara y solución de problemas de seguridad. La
-                    actualización también añade nuevas funciones, como la posibilidad de realizar capturas de
-                    pantalla largas y la opción de habilitar o deshabilitar la vibración del dispositivo. <br>
-
-                    Además, la actualización trae mejoras en la estabilidad del sistema y en la duración de la
-                    batería. También se han corregido errores menores que afectaban el correcto funcionamiento
-                    del teléfono. <br><br>
-                    Algunas de sus características:
-
-                <ul class="lead fs-6">
-                    <li>Pantalla: 6.8 pulgadas AMOLED con resolución de 1080 x 2400 pixeles y tasa de refresco
-                        de 144Hz.</li>
-                    <li>Procesador: Qualcomm Snapdragon 8 Gen 1 con una velocidad de reloj de hasta 3.2 GHz.
-                    </li>
-                    <li>Memoria RAM: 12 GB.</li>
-                    <li>Almacenamiento interno: 256 GB o 512 GB (no expandible mediante tarjeta microSD).</li>
-                    <li>Cámaras traseras: triple cámara trasera de 108 MP (principal), 16 MP (ultra gran
-                        angular) y 8 MP (telefoto con zoom óptico de 5x).</li>
-                    <li>Cámara frontal: 32 MP.</li>
-                    <li>Batería: 5,000 mAh con carga rápida de 120W (el cargador se vende por separado).</li>
-                    <li>Sistema operativo: Android 12.</li>
-
-                    Otras características: 5G, lector de huellas digitales en pantalla, resistencia al agua y al
-                    polvo (IP68), altavoces estéreo, NFC, Bluetooth 5.2, entre otros.
-                </ul>
-                </p>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../img/motorolaedgeUltra.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../img/motorola-frente.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../img/motorola-detras.png" class="d-block w-100" alt="...">
-                        </div>
+                        </ul>
+                        </p>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="col-lg-6 col-sm-12">
+                        <article>
+                            <img src="../img/Q-LITE.png" class="img-fluid mb-5" alt="">
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Consolas -->
-<section class="container mt-5">
+        <!-- PC -->
+        <section class="lanzamiento container mt-5 container-md-fluid">
 
-    <h3 class="text-center fs-1" id="consolas">Consolas</h3>
-    <div class="container text-start mt-5">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-sm-12 noticia">
-                <h2>Q-lite: la proxima consola portatil de Sony</h2>
-                <p class="lead fs-6">Q Lite extendería el legado de PS Vita, en este caso para jugar en
-                    remoto con la PlayStation
-                    5.
-                    Lo que se sabe hasta el momento es que Q Lite será más un accesorio de PlayStation 5 que una
-                    consola portátil propiamente dicha. En
-                    este caso, sería útil para jugar dentro de casa, aunque sin la necesidad de estar frente al
-                    televisor. Por ejemplo, el usuario podrá seguir empleándola en otros ambientes de su hogar,
-                    en la pantalla más pequeña y portable. <br><br>
-                    Algunos datos que se conocen sobre esta consola:
+            <h3 class="text-center" id="pc">PC</h3>
+            <div class="container text-start mt-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-12">
+                        <h2>Portátiles Lenovo Legion refrigerados por IA</h2>
+                        <p>Lenovo ha presentado sus nuevos portátiles de la serie Legion equipados
+                            con una innovadora
+                            tecnología de refrigeración por IA. Estos portátiles están diseñados para satisfacer las
+                            necesidades de los jugadores más exigentes, que buscan un rendimiento óptimo durante largas
+                            sesiones de juego. <br>
 
-                <ul class="lead fs-6">
-                    <li>Las informaciones preliminares señalan que el equipo se llama Q Lite, aunque aquella es
-                        una denominación clave que circula dentro de las oficinas de Sony. En un eventual
-                        lanzamiento, el producto tendría otro nombre.</li>
-                    <li>Procesador: Qualcomm Snapdragon 8 Gen 1 con una velocidad de reloj de hasta 3.2 GHz.
-                    </li>
-                    <li>El próximo dispositivo portable no estaría pensado para correr juegos nativos y propios
-                        tal como ocurrió con PS Vita, sino para funcionar en conjunto con la PlayStation 5.</li>
-                    <li>La idea es que corra juegos de PS5 en forma remota gracias a la función Remote Play.
-                    </li>
-                    <li>Q Lite tendría una pantalla táctil de 8 pulgadas con resolución de 1080p y soporte para
-                        títulos en 60 cuadros por segundo.</li>
-                    <li>Los gatillos incluidos ostentarían la misma tecnología adaptativa que ya conocemos en
-                        los mandos DualSense de PS5.</li>
+                            La tecnología de refrigeración por IA utiliza algoritmos inteligentes para regular la
+                            temperatura del sistema en tiempo real, asegurando que el portátil funcione siempre de
+                            manera eficiente y sin interrupciones. Esto se logra gracias a la inclusión de una cámara
+                            térmica en el interior del dispositivo, que detecta los puntos calientes y fríos y ajusta la
+                            ventilación en consecuencia. <br>
 
-                </ul>
-                </p>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <article>
-                    <img src="../img/Q-LITE.png" class="img-fluid mb-5" alt="">
-                </article>
-            </div>
-        </div>
-    </div>
-</section>
+                            Además, los nuevos portátiles Lenovo Legion están equipados con los últimos procesadores
+                            Intel Core de 11ª generación y gráficos NVIDIA GeForce RTX serie 30, lo que les permite
+                            ofrecer un rendimiento excepcional en juegos y aplicaciones exigentes. <br>
 
-<!-- PC -->
-<section class="container mt-5">
+                            "Estamos encantados de presentar nuestros nuevos portátiles Lenovo Legion equipados con
+                            refrigeración por IA", dijo Johnson Jia, vicepresidente senior de la unidad de negocios de
+                            PCs y dispositivos inteligentes de Lenovo. "La tecnología de refrigeración por IA es un gran
+                            paso adelante en términos de rendimiento y eficiencia energética, y estamos seguros de que
+                            los jugadores apreciarán los beneficios que ofrece". <br>
 
-    <h3 class="text-center fs-1" id="pc">PC</h3>
-    <div class="container text-start mt-5">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-sm-12 noticia">
-                <h2>Portátiles Lenovo Legion refrigerados por IA</h2>
-                <p class="lead fs-6">Lenovo ha presentado sus nuevos portátiles de la serie Legion equipados
-                    con una innovadora
-                    tecnología de refrigeración por IA. Estos portátiles están diseñados para satisfacer las
-                    necesidades de los jugadores más exigentes, que buscan un rendimiento óptimo durante largas
-                    sesiones de juego. <br>
-
-                    La tecnología de refrigeración por IA utiliza algoritmos inteligentes para regular la
-                    temperatura del sistema en tiempo real, asegurando que el portátil funcione siempre de
-                    manera eficiente y sin interrupciones. Esto se logra gracias a la inclusión de una cámara
-                    térmica en el interior del dispositivo, que detecta los puntos calientes y fríos y ajusta la
-                    ventilación en consecuencia. <br>
-
-                    Además, los nuevos portátiles Lenovo Legion están equipados con los últimos procesadores
-                    Intel Core de 11ª generación y gráficos NVIDIA GeForce RTX serie 30, lo que les permite
-                    ofrecer un rendimiento excepcional en juegos y aplicaciones exigentes. <br>
-
-                    "Estamos encantados de presentar nuestros nuevos portátiles Lenovo Legion equipados con
-                    refrigeración por IA", dijo Johnson Jia, vicepresidente senior de la unidad de negocios de
-                    PCs y dispositivos inteligentes de Lenovo. "La tecnología de refrigeración por IA es un gran
-                    paso adelante en términos de rendimiento y eficiencia energética, y estamos seguros de que
-                    los jugadores apreciarán los beneficios que ofrece". <br>
-
-                    Los portátiles Lenovo Legion refrigerados por IA ya están disponibles en todo el mundo, y se
-                    espera que sean una opción popular entre los jugadores y entusiastas de la tecnología en
-                    general.</p>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div id="carouselExampl" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../img/lenovo-legion.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../img/lenovo-legion2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../img/lenovo-legion3.jpg" class="d-block w-100" alt="...">
+                            Los portátiles Lenovo Legion refrigerados por IA ya están disponibles en todo el mundo, y se
+                            espera que sean una opción popular entre los jugadores y entusiastas de la tecnología en
+                            general.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div id="carouselExampl" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/lenovo-legion.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/lenovo-legion2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/lenovo-legion3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampl"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampl"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampl"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampl"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- TV -->
-<section class="container mt-5">
+        <!-- TV -->
+        <section class="lanzamiento container mt-5 container-md-fluid">
 
-    <h3 class="text-center fs-1" id="tv">TV</h3>
-    <div class="container text-start mt-5">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-sm-12 noticia">
-                <h2>El primer TV del mundo con inteligencia cognitiva1: nueva dimensión de imagen y sonido</h2>
-                <p class="lead fs-6">Sony ha lanzado su nueva serie de televisores Bravia XR, que se destacan
-                    por ofrecer una
-                    calidad de imagen excepcional gracias a la inclusión de la tecnología Cognitive Processor
-                    XR. Esta innovadora tecnología utiliza la inteligencia artificial para analizar y procesar
-                    las imágenes de manera similar al cerebro humano, lo que permite que los televisores Bravia
-                    XR ofrezcan una experiencia visual más inmersiva y realista. <br>
+            <h3 class="text-center" id="tv">TV</h3>
+            <div class="container text-start mt-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-12">
+                        <h2>El primer TV del mundo con inteligencia cognitiva1: nueva dimensión de imagen y sonido</h2>
+                        <p>Sony ha lanzado su nueva serie de televisores Bravia XR, que se destacan
+                            por ofrecer una
+                            calidad de imagen excepcional gracias a la inclusión de la tecnología Cognitive Processor
+                            XR. Esta innovadora tecnología utiliza la inteligencia artificial para analizar y procesar
+                            las imágenes de manera similar al cerebro humano, lo que permite que los televisores Bravia
+                            XR ofrezcan una experiencia visual más inmersiva y realista. <br>
 
-                    Los televisores Bravia XR también incluyen características como el modo de ajuste de
-                    ambiente, que ajusta automáticamente el brillo y la temperatura del color de la pantalla
-                    según la iluminación de la habitación, y el modo de imagen Netflix Calibrated, que ofrece
-                    una calidad de imagen optimizada para ver contenido en streaming de Netflix. <br>
+                            Los televisores Bravia XR también incluyen características como el modo de ajuste de
+                            ambiente, que ajusta automáticamente el brillo y la temperatura del color de la pantalla
+                            según la iluminación de la habitación, y el modo de imagen Netflix Calibrated, que ofrece
+                            una calidad de imagen optimizada para ver contenido en streaming de Netflix. <br>
 
-                    Además, los televisores Bravia XR están diseñados para ser compatibles con los últimos
-                    estándares de video, incluyendo 4K y HDR, lo que les permite mostrar imágenes nítidas y
-                    detalladas con colores vibrantes y contrastes precisos. <br>
+                            Además, los televisores Bravia XR están diseñados para ser compatibles con los últimos
+                            estándares de video, incluyendo 4K y HDR, lo que les permite mostrar imágenes nítidas y
+                            detalladas con colores vibrantes y contrastes precisos. <br>
 
-                    "La serie Bravia XR representa lo último en tecnología de televisores de Sony", dijo Mike
-                    Fasulo, presidente y director de operaciones de Sony Electronics en América del Norte. "Los
-                    televisores Bravia XR ofrecen una experiencia visual realmente inmersiva gracias a nuestra
-                    tecnología Cognitive Processor XR, que permite que los televisores procesen imágenes de
-                    manera similar al cerebro humano. Estamos emocionados de ofrecer a nuestros clientes una
-                    experiencia de visualización sin igual". <br>
+                            "La serie Bravia XR representa lo último en tecnología de televisores de Sony", dijo Mike
+                            Fasulo, presidente y director de operaciones de Sony Electronics en América del Norte. "Los
+                            televisores Bravia XR ofrecen una experiencia visual realmente inmersiva gracias a nuestra
+                            tecnología Cognitive Processor XR, que permite que los televisores procesen imágenes de
+                            manera similar al cerebro humano. Estamos emocionados de ofrecer a nuestros clientes una
+                            experiencia de visualización sin igual". <br>
 
-                    Los televisores Bravia XR de Sony están disponibles en tamaños que van desde 50 a 100
-                    pulgadas, y están disponibles en todo el mundo. Se espera que estos televisores sean una
-                    opción popular entre los amantes del cine y los aficionados a la tecnología que buscan una
-                    experiencia visual de alta calidad en casa.</p>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div id="carouselExamp" class="carousel slide">
-                    <div class="carousel-inner">
+                            Los televisores Bravia XR de Sony están disponibles en tamaños que van desde 50 a 100
+                            pulgadas, y están disponibles en todo el mundo. Se espera que estos televisores sean una
+                            opción popular entre los amantes del cine y los aficionados a la tecnología que buscan una
+                            experiencia visual de alta calidad en casa.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div id="carouselExamp" class="carousel slide">
+                            <div class="carousel-inner">
 
-                        <div class="carousel-item active">
-                            <img src="../img/tv-sony1.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../img/tv-sony2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-item active">
+                                    <img src="../img/tv-sony1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/tv-sony2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExamp"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExamp"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExamp"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExamp"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- ACCESORIOS -->
-<section class="container mt-5">
+        <!-- ACCESORIOS -->
+        <section class="lanzamiento container mt-5 container-md-fluid">
 
-    <h3 class=" text-center fs-1" id="accesorios">Accesorios</h3>
-    <div class="container text-start mt-5">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-sm-12 noticia">
-                <h2>Los mejores auriculares gaming: Astro Gaming A50</h2>
-                <p class="lead fs-6">Astro Gaming, una marca líder en la industria de los auriculares para
-                    juegos, lanzó
-                    recientemente los auriculares Astro Gaming A50, que son conocidos por su calidad de sonido
-                    excepcional y su comodidad durante largas sesiones de juego. Los A50s se comercializan como
-                    una solución de audio inalámbrica de alta calidad tanto para juegos como para uso diario, y
-                    ofrecen características como controladores de audio personalizados, un micrófono con
-                    cancelación de ruido y una base de carga magnética. <br>
-                    La comodidad también es una de las principales características de los Astro Gaming A50. Las
-                    almohadillas de los auriculares y la diadema están cubiertas de tela transpirable y suave,
-                    lo que los hace muy cómodos de usar durante largas sesiones de juego. Además, los
-                    auriculares tienen una base de carga magnética, que se conecta al puerto USB de la consola o
-                    PC y recarga los auriculares mientras no están en uso. <br>
-                    Los auriculares Astro Gaming A50 están disponibles en diferentes versiones para PlayStation
-                    5, Xbox Series X/S, PlayStation 4, Xbox One y PC, y son compatibles con Dolby Audio y
-                    Windows Sonic. Con su calidad de sonido excepcional y su comodidad durante largas sesiones
-                    de juego, los Astro Gaming A50 son una excelente opción para cualquier jugador que busque
-                    una experiencia de audio inalámbrica de alta calidad.</p>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div id="carouselExam" class="carousel slide">
-                    <div class="carousel-inner">
+            <h3 class=" text-center" id="accesorios">Accesorios</h3>
+            <div class="container text-start mt-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-12">
+                        <h2>Los mejores auriculares gaming: Astro Gaming A50</h2>
+                        <p>Astro Gaming, una marca líder en la industria de los auriculares para
+                            juegos, lanzó
+                            recientemente los auriculares Astro Gaming A50, que son conocidos por su calidad de sonido
+                            excepcional y su comodidad durante largas sesiones de juego. Los A50s se comercializan como
+                            una solución de audio inalámbrica de alta calidad tanto para juegos como para uso diario, y
+                            ofrecen características como controladores de audio personalizados, un micrófono con
+                            cancelación de ruido y una base de carga magnética. <br>
+                            La comodidad también es una de las principales características de los Astro Gaming A50. Las
+                            almohadillas de los auriculares y la diadema están cubiertas de tela transpirable y suave,
+                            lo que los hace muy cómodos de usar durante largas sesiones de juego. Además, los
+                            auriculares tienen una base de carga magnética, que se conecta al puerto USB de la consola o
+                            PC y recarga los auriculares mientras no están en uso. <br>
+                            Los auriculares Astro Gaming A50 están disponibles en diferentes versiones para PlayStation
+                            5, Xbox Series X/S, PlayStation 4, Xbox One y PC, y son compatibles con Dolby Audio y
+                            Windows Sonic. Con su calidad de sonido excepcional y su comodidad durante largas sesiones
+                            de juego, los Astro Gaming A50 son una excelente opción para cualquier jugador que busque
+                            una experiencia de audio inalámbrica de alta calidad.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div id="carouselExam" class="carousel slide">
+                            <div class="carousel-inner">
 
-                        <div class="carousel-item active">
-                            <img src="../img/a50.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../img/a50-2.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../img/a50-3.png" class="d-block w-100" alt="...">
+                                <div class="carousel-item active">
+                                    <img src="../img/a50.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/a50-2.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/a50-3.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExam"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExam"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExam"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExam"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
     </main>
 
 
     <!-- Comienzo del footer -->
-    <footer class="container-fluid mt-5  bg-color">
+    <footer class="container-fluid mt-5">
         <div class="container">
-
             <div class="row justify-content-lg-between align-items-lg-center">
-                <div class="col-12 col-lg-4 d-flex flex-column align-items-center mt-3">
-                    <img src="../img/logo.png" width="20%" alt="">
-                    <p>Todos los derechos reservados.</p>
+                <div class="col-12 col-lg-12 d-flex flex-column align-items-center mt-3">
+                    <img class="logo" src="../img/logo.png" alt="logo">
+                    <p>&#169 Todos los derechos reservados.</p>
                     <span>heytecno@gmail.com</span>
                 </div>
+                <div class="row">
 
-                <div class="col-12 col-lg-4 p-3">
-                    <h4 class="text-center">Nuestras redes</h4>
-                    <div class="fs-3 d-flex justify-content-around">
-                        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-                        <a href="https://es-la.facebook.com/"><i class="bi bi-facebook"></i></a>
-                        <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                    <div class="col-12 col-lg-6">
+                        <div class="fs-3 d-flex flex-row text-center justify-content-around mt-5">
+                            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                            <a href="https://es-la.facebook.com/"><i class="bi bi-facebook"></i></a>
+                            <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-12 p-4 ">
-                    <h5 class="text-center">Para enterarte de las nuevas novedades dejanos tu mail</h5>
-                    <form action="" class="d-flex gap-3">
-                        <input type="email" placeholder="usuario@gmail.com" class="form-control">
-                        <input type="submit" value="Enviar" class="btn botones">
-                    </form>
+                    <div class="col-12 col-lg-6 p-4 ">
+                        <h4 class="text-center">Para enterarte de las nuevas novedades dejanos tu mail</h4>
+                        <form action="" class="d-flex gap-3">
+                            <input type="email" placeholder="usuario@gmail.com" class="form-control">
+                            <input type="submit" value="Enviar" class="btn botones">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
-
+    <!-- Fin del footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

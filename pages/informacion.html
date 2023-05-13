@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Poppins:wght@200;400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
     <meta name="description" content="Curiosidades sobre Informatica, Inteligencia Artificial, Hardware y Gaming">
     <title>Informacion</title>
 </head>
@@ -25,7 +25,7 @@
 
             <div>
                 <a class="navbar-brand" href="/index.html">
-                    <img src="/img/logo.png" alt="heytecnologo" width="100" height="50">
+                    <img class="logo" src="../img/logo.png" alt="heytecnologo">
                 </a>
             </div>
 
@@ -40,30 +40,30 @@
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item fs-5">
-                        <a class="nav-link" href="./pages/noticias.html">Noticias</a>
+                        <a class="nav-link" href="../pages/noticias.html">Noticias</a>
                     </li>
                     <li class="nav-item fs-5">
-                        <a class="nav-link" href="./informacion.html">Información</a>
+                        <a class="nav-link" href="../pages/informacion.html">Información</a>
                     </li>
                     <li class="nav-item fs-5">
-                        <a class="nav-link" href="./endesarrollo.html">En Desarrollo</a>
+                        <a class="nav-link" href="../pages/endesarrollo.html">En Desarrollo</a>
                     </li>
                     <li class="nav-item fs-5">
-                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </nav>
-            <a href="./pages/contacto.html" class="ov-btn-grow-box fs-5">Suscribite</a>
+            <a href="../pages/contacto.html" class="ov-btn-grow-box fs-5">Suscribite</a>
         </div>
     </header>
     <main>
         <section class="informacion container mt-5">
 
             <!-- informatica -->
-            <div class="row border border-success p-2 mb-2 border-opacity-25 rounded ">
+            <div class="caja row p-2 mb-5 rounded ">
                 <div class="col-md-6 col-sm-12 text-center">
 
-                    <h3 id="informatica" class="border-bottom text-center">Informatica</h3>
+                    <h3 id="informatica" class="border-bottom text-center">Informática</h3>
 
                     <p>La informática es la disciplina que se encarga del procesamiento automático de la información
                         mediante el uso de herramientas tecnológicas, como la computadora. Esta ciencia se encarga de la
@@ -80,21 +80,15 @@
 
                     <h4>Populares</h4>
                     <ul>
-                        <a href="">
-                            <li>Redes Neuronales</li>
-                        </a>
-                        <a href="">
-                            <li>Lenguajes de programacion</li>
-                        </a>
-                        <a href="">
-                            <li>Bases de Datos</li>
-                        </a>
+                        <li><a href="">Redes Neuronales</a></li>
+                        <li><a href="">Lenguajes de programacion</a></li>
+                        <li><a href="">Bases de Datos</a></li>
                     </ul>
 
                 </div>
             </div>
             <!-- inteligencia artificial -->
-            <div class="row border border-success p-2 mb-2 border-opacity-25 rounded">
+            <div class="caja row p-2 mb-5 rounded">
                 <div class="col-md-6 col-sm-12 text-center">
 
                     <h3 id="ia" class="border-bottom">Inteligencia Artificial</h3>
@@ -112,20 +106,14 @@
                 <div class="col-6 mt-5 text-center">
                     <h4>Populares</h4>
                     <ul>
-                        <a href="">
-                            <li>Robotica Inteligente</li>
-                        </a>
-                        <a href="">
-                            <li>Siri, Cortana, Google Assistant o Alexa</li>
-                        </a>
-                        <a href="">
-                            <li>Gestión del tráfico basada en la IA</li>
-                        </a>
+                        <li><a href="">Robótica Inteligente</a></li>
+                        <li><a href="">Siri, Cortana, Google Assistant o Alexa</a></li>
+                        <li><a href="">Gestión del tráfico basada en la IA</a></li>
                     </ul>
                 </div>
             </div>
             <!-- hardware -->
-            <div class="row border border-success p-2 mb-2 border-opacity-25 rounded">
+            <div class="caja row p-2 mb-5 rounded">
                 <div class="col-md-6 col-sm-12 text-center">
 
                     <h3 id="hardware" class="border-bottom">Hardware</h3>
@@ -138,17 +126,13 @@
                 <div class="col-6 mt-5 text-center">
                     <h4>Populares</h4>
                     <ul>
-                        <a href="">
-                            <li>Refrigeracion Liquida</li>
-                        </a>
-                        <a href="">
-                            <li>Todo sobre la RAM</li>
-                        </a>
+                        <li><a href="">Refrigeracion Liquida</a></li>
+                        <li><a href="">Todo sobre la RAM</a></li>
                     </ul>
                 </div>
             </div>
             <!-- gaming -->
-            <div class="row border border-success p-2 mb-2 border-opacity-25 rounded">
+            <div class="caja row p-2 mb-5 rounded">
                 <div class="col-md-6 col-sm-12 text-center">
 
                     <h3 id="gaming" class="border-bottom">Gaming</h3>
@@ -164,12 +148,8 @@
                 <div class="col-6 mt-5 text-center">
                     <h4>Populares</h4>
                     <ul>
-                        <a href="">
-                            <li>Lo que no puede faltar en una PC Gamer</li>
-                        </a>
-                        <a href="">
-                            <li>Los mejores juegos exclusivos para PC</li>
-                        </a>
+                        <li><a href="">Lo que no puede faltar en una PC Gamer</a></li>
+                        <li><a href="">Los mejores juegos exclusivos para PC</a></li>
                     </ul>
                 </div>
             </div>
@@ -178,35 +158,36 @@
     </main>
 
     <!-- Comienzo del footer -->
-    <footer class="container-fluid mt-5  bg-color">
+    <footer class="container-fluid mt-5">
         <div class="container">
-
             <div class="row justify-content-lg-between align-items-lg-center">
-                <div class="col-12 col-lg-4 d-flex flex-column align-items-center mt-3">
-                    <img src="../img/logo.png" width="20%" alt="">
-                    <p>Todos los derechos reservados.</p>
+                <div class="col-12 col-lg-12 d-flex flex-column align-items-center mt-3">
+                    <img class="logo" src="../img/logo.png" alt="logo">
+                    <p>&#169 Todos los derechos reservados.</p>
                     <span>heytecno@gmail.com</span>
                 </div>
+                <div class="row">
 
-                <div class="col-12 col-lg-4 p-3">
-                    <h4 class="text-center">Nuestras redes</h4>
-                    <div class="fs-3 d-flex justify-content-around">
-                        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
-                        <a href="https://es-la.facebook.com/"><i class="bi bi-facebook"></i></a>
-                        <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                    <div class="col-12 col-lg-6">
+                        <div class="fs-3 d-flex flex-row text-center justify-content-around mt-5">
+                            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                            <a href="https://es-la.facebook.com/"><i class="bi bi-facebook"></i></a>
+                            <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-12 p-4 ">
-                    <h5 class="text-center">Para enterarte de las nuevas novedades dejanos tu mail</h5>
-                    <form action="" class="d-flex gap-3">
-                        <input type="email" placeholder="usuario@gmail.com" class="form-control">
-                        <input type="submit" value="Enviar" class="btn btn-color">
-                    </form>
+                    <div class="col-12 col-lg-6 p-4 ">
+                        <h4 class="text-center">Para enterarte de las nuevas novedades dejanos tu mail</h4>
+                        <form action="" class="d-flex gap-3">
+                            <input type="email" placeholder="usuario@gmail.com" class="form-control">
+                            <input type="submit" value="Enviar" class="btn botones">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- fin del footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

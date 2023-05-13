@@ -2,7 +2,7 @@ header {
     @extend .general;
 
     .nav-link {
-        color: black;
+        color: #161613;
 
         &:hover {
             color: $color-secundario;
@@ -10,32 +10,35 @@ header {
     }
 }
 
-footer{
-    @extend .general;
-    .bi{
-        color: $color-secundario;
-    }
-    .email-estilo{
-        border-radius: 5px;
-        border: none;
-    }
-}
-
-.botones{
+footer {
+    font-family: $fuente-general;
     background: $color-secundario;
-    color: #ffffff;
-    &:hover{
-        background:#ffffff;
-        color: $color-secundario;
+
+    span {
+        font-size: 25px;
+        color: #161613;
+
+        &:hover {
+            color: $color-principal;
+        }
     }
+
+    .bi {
+        color: #161613;
+    }
+
+    h4 {
+        color: #161613;
+    }
+
 }
 
 .ov-btn-grow-box {
-    background: #ab7980;
-    color: #ffffff;
+    background: $color-secundario;
+    color: $color-principal;
     text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
-    border: 2px solid #FFF6F6;
+    font-family: $fuente-general;
+    border: 2px solid $color-principal;
     padding: 10px 15px;
     border-radius: 10px;
     position: relative;
@@ -44,12 +47,13 @@ footer{
     display: inline-block;
 
     &:hover {
-        color: #ab7980;
+        color: $color-secundario;
+        border-color: #46b5a2;
     }
 
     &::after {
         content: "";
-        background: #FFF6F6;
+        background: $color-principal;
         position: absolute;
         z-index: -1;
         padding: 16px 20px;
@@ -65,5 +69,17 @@ footer{
     &:hover::after {
         transition: all 0.3s ease-out;
         transform: scale(1, 1);
+    }
+}
+
+.botones {
+    background: $color-secundario;
+    border-color: $color-principal;
+    color: $color-principal;
+
+    &:hover {
+        background: $color-principal;
+        border-color: $color-secundario;
+        color: $color-secundario;
     }
 }
